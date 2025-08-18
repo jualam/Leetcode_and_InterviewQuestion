@@ -24,14 +24,12 @@ class LinkedList:
     def has_loop(self):
         slow=self.head
         fast=self.head
-        while fast and fast.next is not None:
+        while fast and fast.next:
             slow=slow.next
             fast=fast.next.next
             if slow==fast:
                 return True
         return False
-    
-    
     
     
 my_linked_list_1 = LinkedList(1)
