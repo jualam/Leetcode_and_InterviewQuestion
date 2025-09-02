@@ -50,6 +50,7 @@ class DoublyLinkedList:
             second.next=first
             first.prev=second
             current=first.next
+            
     #another way to solve this
     # def swap_pairs(self):
     #     dummy_node = Node(0)
